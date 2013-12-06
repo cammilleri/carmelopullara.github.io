@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$('#about p').waypoint(function(down) {
 		$('#about p').each(function(index) {
 		    $(this).delay(250*index*2).queue(function() { $(this).addClass('animated bounceIn one') });
-		    $('#about img').addClass('animated wobble one');
+		    $('#about img').addClass('animated bounceInRight one');
 	    });
 	}, { offset: '70%' });
     $('#whatido .ido').waypoint(function(down) {
