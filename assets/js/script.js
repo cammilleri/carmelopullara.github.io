@@ -81,4 +81,6 @@ $(document).ready(function(){
 });
 
 $('input, textarea').placeholder();
+
+for(var e,l='article aside footer header nav section time'.split(' ');e=l.pop();document.createElement(e));
 });
