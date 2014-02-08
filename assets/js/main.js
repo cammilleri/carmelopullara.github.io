@@ -67,18 +67,15 @@ $(document).ready(function(){
 
   $('#toggle').click(function(){
     $('#nav').toggleClass('active');
-    $('body').toggleClass('has-sidebar');
   });
 
   $('#main-menu li a').click(function(){
     if ($(window).width() < 992) {
       $('#nav').removeClass('active');
-      $('body').removeClass('has-sidebar');
     }
   });
 
   $(window).resize(function(){
-    $('body').removeClass('has-sidebar');
     $('#nav').removeClass('active');
   });
 
@@ -99,7 +96,6 @@ $(document).ready(function(){
 
   $(document).keyup(function(e) {
     if (e.keyCode == 27) {
-      $('body').removeClass('has-sidebar');
       $('#nav').removeClass('active');
     }
   });
