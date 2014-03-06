@@ -39,59 +39,42 @@
       </div>
     </div>
   </div>
-  <nav id="nav">
-    <div id="logo">
-      <a href="#home">Carmelo Pullara</a>
-    </div>
-    <div id="toggle">
-      <i class="fa toggle-icon"></i>
-    </div>
-    <ul id="main-menu">
-      <li>
-        <a href="#home">
-          Home
-          <span>Carmelo Pullara</span>
-        </a>
-      </li>
-      <li>
-        <a href="#about">
-          About Me
-          <span>Chi sono</span>
-        </a>
-      </li>
-      <li>
-        <a href="#services">
-          Servizi
-          <span>Cosa faccio</span>
-        </a>
-      </li>
-      <li>
-        <a href="#portfolio">
-          Portfolio
-          <span>I miei lavori</span>
-        </a>
-      </li>
-      <li>
-        <a href="#contact">
-          Contatti
-          <span>Richiedi preventivo</span>
-        </a>
-      </li>
-    </ul>    
-  </nav>
-  <section id="home">
-    <div class="home-overlay">
-      <div class="container">
-        <div class="hero">
-          <h1><span>Carmelo</span> Pullara</h1>
-          <div class="slider">
-            <ul class="slides">
-              <li><h2>Web Developer Freelance</h2></li>
-              <li><h2>Realizzazione siti ed applicazioni web</h2></li>
-            </ul>
-          </div>
+  <header class="navbar navbar-default navbar-fixed-top topnav" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <div id="logo">
+          <a href="#home">Carmelo Pullara</a>
         </div>
       </div>
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="nav navbar-nav navbar-right" id="nav">
+          <li class="active"><a href="#home"><span>Home</span></a></li>
+          <li><a href="#about"><span>About</span></a></li>
+          <li><a href="#services"><span>Servizi</span></a></li>
+          <li><a href="#portfolio"><span>Portfolio</span></a></li>
+          <li><a href="#contact"><span>Contatti</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section id="home">
+    <div class="container">
+      <div class="hero">
+        <h1><span>Carmelo</span> Pullara</h1>
+        <div class="slider">
+          <ul class="slides">
+            <li><h2>Web Developer Freelance</h2></li>
+            <li><h2>Realizzazione siti ed applicazioni web</h2></li>
+          </ul>
+        </div>        
+      </div>
+      <img src="assets/img/home.png">
     </div>
   </section>
   <section id="about" class="section">
@@ -190,38 +173,48 @@
       </div>
       <ul class="projects">
         <li class="col-md-4 col-sm-4 col-xs-12">
-          <a href="http://clickstudio.it/themes/floyd/" target="_blank" class="animated hiding" data-animation="bounceInUp" data-delay="0">
+          <div class="single animated hiding" data-animation="bounceInUp" data-delay="0">
             <img src="assets/img/portfolio/1.png">
             <div class="overlay">
-              <span class="project-name">
+              <div class="project-name">
                 <i class="fa fa-share-square-o fa-2x"></i>
                 <h3>Floyd Theme</h3>
-              </span>
+              </div>
+              <div class="project-buttons">
+                <a target="_blank" href="http://themeforest.net/item/floyd-one-page-parallax-theme/6883450?ref=Gazen" class="btn btn-danger">Acquista il tema</a>
+                <a target="_blank" href="http://clickstudio.it/themes/floyd" class="btn btn-white">Visita il sito</a>
+              </div>
             </div>
-          </a>
+          </div>
         </li>
         <li class="col-md-4 col-sm-4 col-xs-12">
-          <a href="http://www.youpromotion.it" target="_blank" class="animated hiding" data-animation="bounceInUp" data-delay="500">
+          <div class="single animated hiding" data-animation="bounceInUp" data-delay="500">
             <img src="assets/img/portfolio/2.png">
             <div class="overlay">
-              <span class="project-name">
+              <div class="project-name">
                 <i class="fa fa-share-square-o fa-2x"></i>
-                <h3>Youpromotion.it</h3>
-              </span>
+                <h3>Oswald Theme</h3>
+              </div>
+              <div class="project-buttons">
+                <a target="_blank" href="http://clickstudio.it/themes/oswald" class="btn btn-white">Visita il sito</a>
+              </div>
             </div>
-          </a>
+          </div>
         </li>
         <li class="col-md-4 col-sm-4 col-xs-12">
-          <a href="http://carmelopullara.com/themes/folioclick" target="_blank" class="animated hiding" data-animation="bounceInUp" data-delay="1000">
+          <div class="single animated hiding" data-animation="bounceInUp" data-delay="1000">
             <img src="assets/img/portfolio/3.png">
             <div class="overlay">
-              <span class="project-name">
+              <div class="project-name">
                 <i class="fa fa-share-square-o fa-2x"></i>
-                <h3>Folioclick Theme</h3>
-              </span>
+                <h3>Youpromotion</h3>
+              </div>
+              <div class="project-buttons">
+                <a target="_blank" href="http://youpromotion.it" class="btn btn-white">Visita il sito</a>
+              </div>
             </div>
-          </a>
-        </li>
+          </div>
+        </li>        
       </ul>
     </div>
   </section>
@@ -243,17 +236,17 @@
               <div class="form-group animated hiding" data-animation="bounceIn" data-delay="0">
                 <input type="text" name="fullname" placeholder="Nome completo" class="form-control input-lg" id="fullname">
               </div>
-              <div class="form-group animated hiding" data-animation="bounceIn" data-delay="500">
+              <div class="form-group animated hiding" data-animation="bounceIn" data-delay="300">
                 <input type="email" name="email" placeholder="Email" class="form-control input-lg" id="email">
               </div>
             </div>
             <div class="col-md-6 col-sm-6">
-              <div class="form-group animated hiding" data-animation="bounceIn" data-delay="1000">
+              <div class="form-group animated hiding" data-animation="bounceIn" data-delay="600">
                 <textarea name="message" placeholder="Messaggio" class="form-control input-lg" id="message"></textarea>
               </div>
             </div>
             <div class="col-md-2 col-sm-2">
-              <div class="form-group center animated hiding" data-animation="bounceIn" data-delay="1500">
+              <div class="form-group center animated hiding" data-animation="bounceIn" data-delay="900">
                 <button type="submit" class="btn btn-send btn-lg">Invia</button>
               </div>
             </div>
