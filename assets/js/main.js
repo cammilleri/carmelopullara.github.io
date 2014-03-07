@@ -66,6 +66,12 @@ $(document).ready(function(){
     keyboard: false
   });
 
+  $('.nav a').on('click', function(){
+    if ($(window).width() < 768) {
+      $(".navbar-toggle").click();
+    }
+  });
+
   $(document).scroll(function() {
     if ($(document).scrollTop() >= 50) {
       $('.topnav').addClass('scrolled');
